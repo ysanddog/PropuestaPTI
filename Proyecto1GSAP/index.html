@@ -27,7 +27,9 @@
 <body>
    <header class="navbar">
   <div class="nav-container">
-    <div class="logo" ><img src="https://i.postimg.cc/9X7nkjnh/logo-powertoolsof.png" alt=""></div>
+    <div class="logo">
+  <div id="logo-lottie"></div>
+</div>
 
     <nav>
       <ul class="nav-links">
@@ -83,7 +85,18 @@
 
   </div>
 </section>
+<script>
+lottie.loadAnimation({
+  container: document.getElementById('logo-lottie'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'animation.json' // ruta del archivo
+});
+</script>
+<script src="https://unpkg.com/lottie-web@5.12.2/build/player/lottie.min.js"></script>
 <script src="./main.js"></script>
+
 </body>
 
 </html>

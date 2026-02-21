@@ -189,3 +189,12 @@ gsap.to(".hero-glow", {
   yoyo: true,
   ease: "sine.inOut"
 });
+const anim = lottie.loadAnimation({
+  container: document.getElementById('logo-lottie'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: false,
+  path: 'animation.json'
+});
+
+document.querySelector('.logo').addEventListener('mouseenter', () => anim.play());

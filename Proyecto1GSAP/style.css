@@ -216,3 +216,10 @@
     radial-gradient(circle at 80% 70%, rgba(221, 44, 13, 0.2), transparent 40%);
   filter: blur(40px);
 }
+#logo-lottie {
+  width: 60px;
+  height: 60px;
+}
+#logo-lottie {
+  width: clamp(40px, 6vw, 70px);
+}
