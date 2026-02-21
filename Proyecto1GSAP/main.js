@@ -122,6 +122,7 @@ gsap.utils.toArray(".product").forEach(product => {
     ease: "sine.inOut"
   });
 
+  
 });
 const showcasetrack = document.querySelector(".showcase-track");
 
