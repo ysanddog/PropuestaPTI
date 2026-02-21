@@ -192,7 +192,7 @@
 
 .wrench {
   position: absolute;
-  top: 230px;     /* controla cuánto se superpone */
+  top: -120px;     /* controla cuánto se superpone */
   left: -250px;
   width: 250px;
   z-index: 9999;   /* 🔥 por encima de todo */
@@ -218,8 +218,8 @@
 }
 #logo-lottie {
   width: 60px;
-  height: 60px;
+  height: 100px;
 }
 #logo-lottie {
-  width: clamp(40px, 6vw, 70px);
+  width: clamp(150px, 6vw, 100px);
 }
