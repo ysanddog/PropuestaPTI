@@ -194,7 +194,7 @@ const anim = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'animation (2).json'
+  path: 'animation (4).json'
 });
 lottie.loadAnimation({
   container: document.getElementById('inicio-lottie'),
