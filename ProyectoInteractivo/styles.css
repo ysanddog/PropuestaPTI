@@ -4,6 +4,10 @@ body {
   background: #0f0f0f;
   color: white;
 }
+lottie-player{
+  max-height: 440px;
+
+}
 
 .header {
   display: flex;

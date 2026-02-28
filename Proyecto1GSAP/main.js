@@ -194,7 +194,7 @@ const anim = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: 'animation (4).json'
+  path: 'animation (3).json'
 });
 lottie.loadAnimation({
   container: document.getElementById('inicio-lottie'),
@@ -204,4 +204,4 @@ lottie.loadAnimation({
   path: 'animation.json' // ruta del archivo
 });
 
-document.querySelector('.logo').addEventListener('mouseenter', () => anim.play());
+// document.querySelector('.logo').addEventListener('mouseenter', () => anim.play());

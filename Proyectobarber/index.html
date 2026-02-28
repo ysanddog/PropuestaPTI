@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbería VIP</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lottie -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo"><img src="/Proyectobarber/recursos/letrero.png" alt=""></div>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Estilo que define tu personalidad</h1>
+    <p>Cortes premium • Afeitado clásico • Experiencia exclusiva</p>
+    <button>Reservar cita</button>
+  </div>
+
+  <div class="hero-lottie">
+    <lottie-player
+      src="/Proyectobarber/recursos/animation (3).json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay>
+    </lottie-player>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section servicios">
+  <h2>Nuestros Servicios</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Corte Premium</h3>
+      <p>Estilo moderno adaptado a tu personalidad.</p>
+    </div>
+
+    <div class="card">
+      <h3>Afeitado Clásico</h3>
+      <p>Ritual tradicional con toallas calientes.</p>
+    </div>
+
+    <div class="card">
+      <h3>Perfilado de Barba</h3>
+      <p>Definición precisa para un look impecable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="section galeria">
+  <h2>Estilos Recientes</h2>
+  <div class="gallery-grid">
+    <img src="/Proyectobarber/recursos/letrero.png">
+    <img src="/Proyectobarber/recursos/maquinanpg.png">
+    <img src="/Proyectobarber/recursos/letrero.png">
+    <img src="/Proyectobarber/recursos/maquinanpg.png">
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section contacto">
+  <h2>Reserva tu cita</h2>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d612.891285498149!2d-74.17152530172577!3d4.623948170729407!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1772302113458!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+    <a href="https://maps.app.goo.gl/denToTjvEQt5wn559" target="_blank">
+  <button>Cómo llegar</button>
+</a>
+  </div>
+
+  <p>📍 Bogotá, Colombia<br>📞 +57 3222459071<br></p>
+  <button>📲WhatsApp</button>
+</section>
+
+<!-- MAQUINA DE CORTE ANIMADA -->
+<img src="/Proyectobarber/recursos/maquinanpg.png" class="clipper">
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
