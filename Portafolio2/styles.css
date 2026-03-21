@@ -1,0 +1,344 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+overflow-x:hidden;
+}
+
+body{
+font-family:system-ui,-apple-system,Segoe UI,Roboto;
+background:#0a0a0a;
+color:white;
+line-height:1.5;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+/* BACKGROUND */
+
+.bg-gradient{
+position:fixed;
+inset:0;
+z-index:-1;
+
+background:
+radial-gradient(circle at 20% 30%, #1a1a1a, transparent 40%),
+radial-gradient(circle at 80% 70%, #111, transparent 40%),
+linear-gradient(180deg, #0a0a0a, #000);
+
+animation:bgMove 18s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove{
+0%{transform:scale(1)}
+100%{transform:scale(1.2)}
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+position:relative;
+z-index:10;
+}
+
+.logo img{
+width:70px;
+}
+
+.menu-toggle{
+font-size:28px;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+/* FULLSCREEN MENU */
+
+.menu-fullscreen{
+
+position:fixed;
+inset:0;
+background:black;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+transform:translateY(-100%);
+z-index:100;
+}
+
+.menu-fullscreen nav{
+display:flex;
+flex-direction:column;
+gap:30px;
+text-align:center;
+}
+
+.menu-fullscreen a{
+font-size:2rem;
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.menu-fullscreen a:hover{
+opacity:.6;
+}
+
+.wa-btn{
+margin-top:30px;
+background:white;
+color:black;
+padding:12px 24px;
+border-radius:30px;
+}
+
+/* HERO */
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+min-height:90vh;
+gap:60px;
+}
+
+.hero-visual{
+display:flex;
+justify-content:center;
+}
+
+.hero-visual lottie-player{
+max-width:420px;
+}
+
+.hero-brand{
+width:120px;
+margin-bottom:20px;
+}
+
+.hero-content h1{
+font-size:clamp(2.5rem,5vw,4rem);
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+opacity:.7;
+max-width:400px;
+margin-bottom:30px;
+}
+
+.cta{
+display:inline-block;
+background:white;
+color:black;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.cta:hover{
+transform:scale(1.08);
+}
+
+/* FLOATING PRODUCTS */
+
+.floating-products{
+position:relative;
+height:80vh;
+margin-top:100px;
+}
+
+.float-item{
+position:absolute;
+width:240px;
+pointer-events:none;
+filter:drop-shadow(0 30px 40px rgba(0,0,0,.6));
+}
+
+.float-item:nth-child(1){
+left:10%;
+top:40%;
+}
+
+.float-item:nth-child(2){
+left:45%;
+top:10%;
+}
+
+.float-item:nth-child(3){
+right:10%;
+top:50%;
+}
+
+/* STORYTELLING */
+
+.story{
+padding:160px 0;
+display:grid;
+gap:120px;
+}
+
+.story-block{
+max-width:600px;
+}
+
+.story-block h2{
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.story-block p{
+opacity:.7;
+font-size:1.1rem;
+}
+
+/* INFINITE CAROUSEL */
+
+.infinite-carousel{
+overflow:hidden;
+padding:140px 0;
+
+mask-image:linear-gradient(
+to right,
+transparent,
+black 15%,
+black 85%,
+transparent
+);
+}
+
+.carousel-track{
+display:flex;
+gap:40px;
+width:max-content;
+}
+
+.carousel-track img{
+width:220px;
+border-radius:16px;
+}
+
+/* PRODUCTS GRID */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+padding:140px 0;
+}
+
+.product-card{
+position:relative;
+overflow:hidden;
+background:#111;
+border-radius:16px;
+padding:20px;
+transition:.4s;
+}
+
+.product-card img{
+transition:.5s;
+}
+
+.product-card:hover img{
+transform:scale(1.15);
+}
+
+.price{
+position:absolute;
+bottom:16px;
+left:20px;
+font-size:14px;
+opacity:.7;
+}
+
+.buy-btn{
+position:absolute;
+right:20px;
+bottom:16px;
+background:white;
+color:black;
+padding:6px 12px;
+border-radius:20px;
+text-decoration:none;
+font-size:12px;
+}
+
+/* CTA FINAL */
+
+.cta-section{
+text-align:center;
+padding:200px 20px;
+}
+
+.cta-section h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.cta-section p{
+opacity:.7;
+margin-bottom:30px;
+}
+
+.cta-big{
+display:inline-block;
+background:white;
+color:black;
+padding:18px 36px;
+border-radius:40px;
+font-size:1.2rem;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:40px;
+opacity:.5;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-content p{
+margin:auto;
+}
+
+.hero-brand{
+margin:auto;
+}
+
+.float-item{
+width:180px;
+}
+
+}

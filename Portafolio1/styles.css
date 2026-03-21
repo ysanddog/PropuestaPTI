@@ -1,0 +1,242 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo img{
+width:70px;
+}
+
+/* HERO */
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+min-height:90vh;
+gap:60px;
+}
+
+.hero-visual lottie-player{
+max-width:420px;
+margin:auto;
+}
+
+.hero-content{
+text-align:left;
+}
+
+.hero-brand{
+width:120px;
+margin-bottom:20px;
+}
+
+.hero-content h1{
+font-size:clamp(2rem,4vw,3.5rem);
+margin-bottom:10px;
+}
+
+.hero-content p{
+opacity:.7;
+margin-bottom:30px;
+}
+
+.cta{
+padding:14px 26px;
+background:white;
+color:black;
+border:none;
+border-radius:30px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.cta:hover{
+transform:scale(1.05);
+}
+/* STORYTELLING */
+
+.story{
+padding:160px 0;
+display:grid;
+gap:120px;
+justify-items:center; /* centra horizontalmente */
+text-align:center; /* centra texto */
+}
+
+.story-block{
+max-width:600px;
+opacity:0; /* para animación */
+transform:translateX(0);
+}
+
+.story-block h2{
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.story-block p{
+opacity:.7;
+font-size:1.1rem;
+line-height:1.6;
+}
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+padding:100px 0;
+}
+
+.product-card{
+position:relative;
+overflow:hidden;
+border-radius:16px;
+background:#111;
+padding:20px;
+transition:.4s;
+}
+
+.product-card img{
+transition:.5s;
+}
+
+.product-card:hover img{
+transform:scale(1.15);
+}
+
+.price{
+position:absolute;
+bottom:16px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(0,0,0,.7);
+padding:6px 14px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* FEATURED */
+
+.featured{
+text-align:center;
+padding:120px 20px;
+font-size:2rem;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:40px;
+opacity:.6;
+}
+
+/* BACKGROUND */
+
+.bg-gradient{
+position:fixed;
+inset:0;
+z-index:-1;
+background:
+radial-gradient(circle at 20% 30%, #1a1a1a, transparent 40%),
+radial-gradient(circle at 80% 70%, #111, transparent 40%),
+linear-gradient(180deg, #0a0a0a, #000);
+}
+/* MOBILE */
+
+@media (max-width:768px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero-content{
+text-align:center;
+}
+
+.hero-brand{
+margin:auto;
+}
+
+}
+.floating-products{
+position:relative;
+height:70vh;
+margin-top:120px;
+}
+
+.float-item{
+position:absolute;
+width:220px;
+pointer-events:none;
+}
+
+.float-item:nth-child(1){
+left:10%;
+top:40%;
+}
+
+.float-item:nth-child(2){
+left:45%;
+top:10%;
+}
+
+.float-item:nth-child(3){
+right:10%;
+top:50%;
+}
+.infinite-carousel{
+overflow:hidden;
+padding:120px 0;
+}
+
+.carousel-track{
+display:flex;
+gap:40px;
+width:max-content;
+}
+
+.carousel-track img{
+width:220px;
+border-radius:16px;
+}
+.infinite-carousel{
+mask-image:linear-gradient(
+ to right,
+ transparent,
+ black 15%,
+ black 85%,
+ transparent
+);
+}
